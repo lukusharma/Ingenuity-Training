@@ -59,6 +59,7 @@ position: absolute;
     font-family: cursive;
     background-color: aquamarine;
     margin-top: 10px;
+    padding: 20px;
     
 
 }
@@ -66,23 +67,26 @@ position: absolute;
 .div2
 {
     font-family: 'Courier New', Courier, monospace;
-    background-color: aliceblue;
+    background-color:bisque;
     float: left;
-    size: 30%;
+    width: 32%;
+    padding: 10px;
 }
 
 .div3
 {
-    font-family: 'Courier New', Courier, monospace;
-    background-color: aliceblue;
+    font-family: cursive;
+    background-color: aquamarine;
     float: left;
-    size: 30%;
+    width:  32%;
+    padding: 10px;
 }
 
 .div4
 {
     font-family: 'Courier New', Courier, monospace;
-    background-color: aliceblue;
+    background-color: bisque;
     float: left;
-    size: 30%;
+    width:  32%;
+    padding: 10px;
 }
