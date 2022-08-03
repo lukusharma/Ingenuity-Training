@@ -10,7 +10,7 @@
 }
 .container #imgtxt{
     font-family: Fantasy;
-    font-size: 80px;
+    font-size: 40px;
 position: absolute;
     top: 40%;
     left: 50%;
@@ -19,7 +19,7 @@ position: absolute;
 }
 .container #imgtxt2{
     font-family: cursive;
-    font-size: 50px;
+    font-size: 30px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -37,7 +37,7 @@ position: absolute;
     opacity: .9;
     background-color: aquamarine;
     padding: 20px;
-    font-size: 50px;
+    font-size: 30px;
     position: absolute;
     top: 62%;
     left: 50%;
@@ -69,7 +69,7 @@ position: absolute;
     font-family: 'Courier New', Courier, monospace;
     background-color:bisque;
     float: left;
-    width: 32%;
+    width: 30%;
     padding: 10px;
 }
 
@@ -78,7 +78,7 @@ position: absolute;
     font-family: cursive;
     background-color: aquamarine;
     float: left;
-    width:  32%;
+    width:  30%;
     padding: 10px;
 }
 
@@ -87,6 +87,6 @@ position: absolute;
     font-family: 'Courier New', Courier, monospace;
     background-color: bisque;
     float: left;
-    width:  32%;
+    width:  30  %;
     padding: 10px;
 }
