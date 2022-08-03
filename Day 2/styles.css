@@ -1,0 +1,65 @@
+#heading
+    {
+      
+      border-style: solid;
+      border-radius: 50px;
+      border-color: white;
+      text-align: center;
+      background-color: lightgreen;
+      opacity: .6;
+      font-size: 70px;
+      font-style: italic;
+      font-family: cursive;
+      margin: 20px;
+    
+    }
+
+    #under
+    {
+        background-color:lightcyan; 
+        font-size: 15px;
+        font-style:bold;
+        font-family: cursive;
+        width: 100%;
+        line-height: 1px;
+     
+
+    }
+    
+    div.img
+    {
+        
+        width: 80%;
+        background-color: white;
+        /* margin-bottom: 50%; */
+        text-align: center;
+        margin-left: 10%;
+        
+        
+        
+    }
+
+    div.container
+    {
+        text-align: center;
+        padding: .1px 1px;
+        font-size:120%;
+        font-style: italic;
+        font-family: Monospace;
+      
+    }
+
+    div.list
+    {
+        background-color: skyblue;
+        font-size: 15px;
+        font-style:bold;
+        font-family: cursive;
+        padding-left: 30%;
+    }
+
+    div.achievements
+    {
+        background-color: skyblue;
+        
+    }
