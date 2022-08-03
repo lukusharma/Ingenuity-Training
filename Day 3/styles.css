@@ -11,9 +11,7 @@
 .container #imgtxt{
     font-family: Fantasy;
     font-size: 80px;
-
-    
-    position: absolute;
+position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -27,15 +25,16 @@
     left: 50%;
     transform: translate(-50%,-50%);
     color: yellowgreen;
+ 
+    
 }
 .container #imgtxt3{
     font-family: cursive;
     border-style: solid;
-      border-radius: 50px;
-      border-color: white;
-      text-align: center;
-      /* background-color: lightgreen; */
-      opacity: .9;
+    border-radius: 50px;
+    border-color: white;
+    text-align: center;
+    opacity: .9;
     background-color: aquamarine;
     padding: 20px;
     font-size: 50px;
@@ -44,14 +43,46 @@
     left: 50%;
     transform: translate(-50%,-50%);
     color: yellow;
+    
 }
 #i1
 {
     width: 100%;
     height: 100vh;
+    /* filter: blur(4px);
+    -webkit-filter:blur(4px); */
     
 }
 
+.div1
+{
+    font-family: cursive;
+    background-color: aquamarine;
+    margin-top: 10px;
+    
 
+}
 
+.div2
+{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aliceblue;
+    float: left;
+    size: 30%;
+}
 
+.div3
+{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aliceblue;
+    float: left;
+    size: 30%;
+}
+
+.div4
+{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aliceblue;
+    float: left;
+    size: 30%;
+}
