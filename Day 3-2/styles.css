@@ -74,9 +74,10 @@ header
     }
     .banner .b1
     {
-        background-color: greenyellow;
-    width: 40vh;
-    height: 40vh;
+        background-color: white;
+        width: 80vh;
+        height: 70vh;
+        margin-top: 2%;
     }
     
 
