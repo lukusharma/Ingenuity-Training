@@ -1,0 +1,162 @@
+*
+{
+    padding: 0%;
+    margin: 0%;
+}
+.container
+{
+    margin: auto;
+}
+
+
+header
+{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    background-color:#1dd091;
+    width: auto;
+    height: 20vh;
+    /* margin-top: 5vh; */
+}
+
+.nav
+    {
+        display: flex;
+        /* float: left; */
+        justify-content: end;
+        justify-content: space-around; 
+        width: 100%;
+        height: 5vh;
+        background-color: #05386B;
+        border: 2px solid #bbb;
+        position:fixed;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #05386B;
+    }
+    li {
+        float: left;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        border-right: 1px solid #bbb;
+        border-left: 1px solid #bbb;
+    }
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 14px 50px;
+        text-decoration: none;
+    }
+    li a:hover {
+        background-color: #111;
+    }
+
+
+.banner
+    {
+        background-color: aquamarine;
+        display:flex;
+        justify-content: space-around;
+        width: auto;
+        height: 80vh;
+        /* display:flex ;
+        justify-content: center; 
+        align-items : center;*/
+    }
+    .banner .b1
+    {
+        background-color: greenyellow;
+    width: 40vh;
+    height: 40vh;
+    }
+    
+
+.text
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 48px;
+}
+
+
+#s1, #s2, #s3, #s4
+{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color:blueviolet ;
+    padding: 4%;
+}
+
+
+.imgcontainer
+{
+    display:flex;
+    justify-content: space-around;
+
+}
+.imgcontainer .imgbox
+{
+    background-color: greenyellow;
+    width: 40vh;
+    height: 40vh;
+    border-radius: 50%;
+}
+
+
+.ms
+{
+    display: flex;
+    float: left;
+    justify-content: space-between;
+}
+.main
+{
+    display: flex;
+    float: left;
+    width: 50%;
+    height: 50vh;
+    background-color: aquamarine;
+    overflow: hidden;
+}
+.aside
+{
+    display: flex;
+    height: 50vh;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 50%;
+    background-color: navajowhite;
+    overflow: hidden;
+    justify-content: space-between  ;
+}
+.aside  .as
+{
+    background-color: goldenrod ;
+    width: 100%;
+    overflow: hidden;
+    height: 15vh;
+    justify-content: space-between;
+}
+
+.boxcontainer
+{
+    display:flex;
+    justify-content: space-around;
+}
+.boxcontainer .box
+{
+    background-color: greenyellow;
+    width: 40vh;
+    height: 40vh;
+}
