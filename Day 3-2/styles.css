@@ -7,7 +7,10 @@
 {
     margin: auto;
 }
-
+body
+{
+    background-color: skyblue;
+}
 
 header
 {
@@ -31,15 +34,16 @@ header
         background-color: #05386B;
         border: 2px solid #bbb;
         position:fixed;
+        z-index: 2;
     }
-    ul {
+    #u1 {
         list-style-type: none;
         margin: 0;
         padding: 0;
         overflow: hidden;
         background-color: #05386B;
     }
-    li {
+    #l1 {
         float: left;
         display: flex;
         justify-content: end;
@@ -59,15 +63,16 @@ header
     li a:hover {
         background-color: #111;
     }
-
+/* rgb 244,250,253 */
 
 .banner
     {
-        background-color: aquamarine;
+        background-color: #8ee4af;
         display:flex;
         justify-content: space-around;
-        width: auto;
+        /* width: auto; */
         height: 80vh;
+        overflow: hidden;
         /* display:flex ;
         justify-content: center; 
         align-items : center;*/
@@ -75,10 +80,50 @@ header
     .banner .b1
     {
         background-color: white;
-        width: 80vh;
-        height: 70vh;
-        margin-top: 2%;
+        width: 75%;
+        height: 75vh;
+        margin-top: 1%;
+        position: relative;
+        text-align: center;
+        overflow: hidden;
     }
+    .banner .b2
+    {
+        width: 20%;
+        height: 75vh;
+        background-color: azure;
+        margin-top: 1%;
+        background-color: #a4e1ff;
+        display: flex;
+    }
+    .b2 #u2
+    {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        width: 100%;
+        background-color: black;
+    }
+    .b2 #l2
+    {
+        display: flex;
+        justify-content:center;
+        align-items: end;
+        border-right: 1px solid #bbb;
+        border-left: 1px solid #bbb;
+        height:15vh;
+        align-items: center;
+    }
+    
+    .b1 #i1
+    {
+        width: 100%;
+        height: 75vh;
+        overflow: hidden;
+        z-index: 1;
+    }
+    
     
 
 .text
@@ -112,8 +157,15 @@ header
     width: 40vh;
     height: 40vh;
     border-radius: 50%;
+    overflow: hidden;
 }
-
+.imgbox #i2, #i3, #i4, #i5
+{
+    width: 100%;
+    height: 120%;
+    overflow: hidden;
+    z-index: 1;
+}
 
 .ms
 {
@@ -123,41 +175,155 @@ header
 }
 .main
 {
-    display: flex;
-    float: left;
-    width: 50%;
-    height: 50vh;
+    /* display: flex;   */
+    float: left ;
+    width: 45%;
+    height: 70vh;
     background-color: aquamarine;
+    justify-content: space-between;
     overflow: hidden;
+    margin-right: 2.5%;
+    margin-left: 5%;
+}
+.main #i6
+{
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+    z-index: 1;
 }
 .aside
 {
     display: flex;
-    height: 50vh;
+    height: 70vh;
     flex-wrap: nowrap;
     flex-direction: column;
-    width: 50%;
+    width: 45%;
     background-color: navajowhite;
     overflow: hidden;
     justify-content: space-between  ;
 }
 .aside  .as
 {
-    background-color: goldenrod ;
+    display: flex;
+    background-color: aquamarine ;
     width: 100%;
     overflow: hidden;
-    height: 15vh;
+    height: 21.7vh;
     justify-content: space-between;
+}
+.as #p2
+{
+    width: 75%;
+    text-align: center;
+    float: left;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 30px;
+    font-family:cursive;
+}
+.box #p3
+{
+    /* width: 75%; */
+    height: 50%;
+    text-align: center;
+    /* float: left; */
+    display: flex;
+        justify-content:center;
+    align-items: center;
+    font-size: 30px;
+    font-family:cursive;
+    
+}
+.aside #i7
+{
+    display: flex;
+    width: 25%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
 }
 
 .boxcontainer
 {
+
     display:flex;
     justify-content: space-around;
 }
 .boxcontainer .box
 {
-    background-color: greenyellow;
+    background-color: rgb(0, 137, 191);
     width: 40vh;
-    height: 40vh;
+    height: 69vh;
+    display: flex;
+    
+}
+.box #i8
+{
+    display: flex;
+    width: 120%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.end
+{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    background-color:#1dd091;
+    width: auto;
+    height: 20vh;
+
+}
+
+  
+#sec4
+{
+    padding: 50px;
+    
+}
+.work
+{
+    display: flex;
+     width: 100%;
+}
+.first
+{
+    background-color: rgb(65, 72, 78);
+    height: 15vh;
+    padding: 30px;
+}
+.true
+{
+    width: 50%;
+    color: white;
+    margin-right: 200px;
+}
+h4
+{
+    color: white;
+    font-size: 18px;
+}
+.true1
+{
+    margin-right: 80px;
+}
+h3
+{
+   padding-left: 500px;
+    padding-top: 40px;
+    font-size: 25px;
+    color:thistle;
+    padding-right: 23px;
+}
+.f
+{
+    background-color: red;
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    margin-top: 30px;
 }

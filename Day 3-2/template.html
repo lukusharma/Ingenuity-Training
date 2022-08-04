@@ -6,85 +6,181 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Day 3-2</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./style.scss">
 </head>
 <body>
     
     <div class="container">
         <div class="nav">
-            <ul>
-                <li><a href="#">Avatars</a></li>
-                <li><a href="#">Movies</a></li>
-                <li><a href="#">Awards</a></li>
-                <li><a href="#">Social Media</a></li>
+            <ul id="u1">
+                <li id="l1"><a href="#">About</a></li>
+                <li id="l1"><a href="#s1">Avatars</a></li>
+                <li id="l1"><a href="#s2">Movies</a></li>
+                <li id="l1"><a href="#s3">Awards</a></li>
+                <li id="l1"><a href="#s4">Social Media</a></li>
             </ul>
         </div>  
         
-        <header><p class="text" style="color:#007567; margin-top: 5vh;">A page about RDJ</p></header>
+        <header><p class="text" style="color:#007567; margin-top: 5vh;">A page about Johnny Depp</p></header>
       
         <div class="banner">
             <div class="b1">
-                
+                <div>
+                    <img id="i1" src="./dj2.jpg" alt="Picture of RDJ">
+                </div>
             </div>
-            <div class="b1">
-
+            <div class="b2">
+                    <ul id="u2">
+                        <li id="l2" style="border-bottom: 1px solid #bbb;"><a href="https://en.wikipedia.org/wiki/Johnny_Depp">Wikipedia</a></li>
+                        <li id="l2" style="border-bottom: 1px solid #bbb;"><a href="https://www.imdb.com/name/nm0000136/">IMDB</a></li>
+                        <li id="l2" style="border-bottom: 1px solid #bbb;"><a href="https://www.rottentomatoes.com/celebrity/johnny_depp">Rotten Tomatoes</a></li>
+                        <li id="l2" style="border-bottom: 1px solid #bbb;"><a href="https://www.forbes.com/profile/johnny-depp/">Forbes</a></li>
+                        <li id="l2" style="border-bottom: 1px solid #bbb;"><a href="https://www.themoviedb.org/person/85-johnny-depp">TheMovieDB</a></li>
+                    </ul>
             </div>
-        
         </div>
 
-        <section id="s1">Section - 1</section>
+
+        <section id="s1">Avatars</section>
             <div class="imgcontainer">
                 <div class="imgbox">
-
+                    <img id="i2" src="./avt1.jpg" alt="image 1">
                 </div>
                 <div class="imgbox">
-                    
+                    <img id="i3" src="./avt2.jpg" alt="image 1">
                 </div>
                 <div class="imgbox">
-                    
+                    <img id="i4" src="./avt3.jpeg" alt="image 1">
                 </div>
                 <div class="imgbox">
-                    
+                    <img id="i5" src="./avt4.jpeg" alt="image 1">
                 </div>
             </div>
 
-        <section id="s2">Section - 2</section>
+
+        <section id="s2">Movies</section>
             <div id="ms"> 
-                <main class="main">
-                    
-                </main>
-                <aside class="aside">
+                <div class="main">
+                    <div>
+                        <img id="i6" src="./potc.png" alt="potc">
+                    </div>
+                    <div>
+                        <p style="
+                        display: flex;
+                        justify-content:center;
+                        align-items: center; margin-top: 5%;
+                        font-size: 45px;
+                        font-family:cursive;
+                        color: black;">Pirates of the Carrabian</p>
+                    </div>
+                </div>      
+                <div class="aside">
                     <div class="as">
+                        <img id="i7" src="./potc2.jpg" alt="">
+                        <p id="p2">Charlie and The Chocolate Factory
+                        </p>
+                    </div>
+                    <div class="as">
+                        <img id="i7" src="./potc3.jpg" alt="">
+                        <p id="p2">Edward Scissorhands
+                        </p>
+                    </div>
+                    <div class="as">
+                        <img id="i7" src="./potc4.jpg" alt="">
+                        <p id="p2">Fantastic Beasts
+                        </p>
+                    </div>
 
-                    </div>
-                    <div class="as">
-                        
-                    </div>
-                    <div class="as">
-                        
-                    </div>
-
-                </aside>
+                </div>
             </div>
 
-        <section id="s3">Section - 3</section>
+        <section id="s3">Awards</section>
              <div class="boxcontainer">
                 <div class="box">
-
+                    <img id="i8" src="./aw1.jpg" alt="">
+                    <p id="p3" style="
+                    display: flex;
+                    
+                    font-size: 15px;
+                    font-family:cursive;
+                    color: black;margin-top: 40%;">
+                        Golden Globe Award
+                    </p>
                 </div>
                 <div class="box">
+                    <img id="i8" src="./aw2.jpg" alt="">
+                    <p id="p3" style="
+                    display: flex;
                     
+                    font-size: 15px;
+                    font-family:cursive;
+                    color: black; margin-top: 40%;">
+                        MTV Generation Award
+                    </p>
                 </div>
                 <div class="box">
+                    <img id="i8" src="./aw3.jpg" alt="">
+                    <p id="p3" style="
+                    display: flex;
                     
+                    font-size: 15px;
+                    font-family:cursive;
+                    color: black;margin-top: 40%;">
+                        People's Choice Award
+                    </p>
                 </div>
                 <div class="box">
+                    <img id="i8" src="./aw4.jpg" alt="">
+                    <p id="p3" style="
+                    display: flex;
                     
+                    font-size: 15px;
+                    font-family:cursive;
+                    color: black;margin-top: 40%;">
+                        Honorary Césars Award
+                    </p>
                 </div>
             </div>
             
-        <section id="s4">Section - 4</section>
-        <footer>Footer</footer>
+        <section id="s4">Social Media</section>
+       
+    <div class="first">
+        <hr>
+        <div style="display: flex;">
+            <h3>Links to Social Media</h3>
+            <div class="f">
+                <a href="https://www.instagram.com/johnnydepp/" style="text-decoration: none; 
+                padding: 15px; color: black; 
+                font-size: 15px;">
+                <b>Instagram</b></a>    
+            </div>
+            <div class="f">
+                <a href="https://twitter.com/search?src=logged_out_home_trend_click&vertical=trends&q=Johnny%20Depp" style="text-decoration: none; 
+                padding: 25px; margin-top: 10%; color: black; 
+                font-size: 15px;">
+                <b>Twitter</b></a>    
+            </div>
+            <div class="f">
+                <a href="https://www.facebook.com/JohnnyDepp" style="text-decoration: none; 
+                padding: 20px; color: black; 
+                font-size: 15px; align-items: center;">
+                <b>Facebook</b></a>    
+            </div>
+            <div class="f">
+                <a href="https://www.linkedin.com/in/johnny-depp-270618128" style="text-decoration: none; 
+                padding: 20px; color: black; 
+                font-size: 15px;">
+                <b>LinkedIn</b></a>    
+            </div>
 
+       </div>
+       <br>
+       <hr>
     </div>
+    
+      
+      
+
+</div>
 </body>
 </html>
