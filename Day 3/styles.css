@@ -8,10 +8,11 @@
     text-align: center;
     color: white;
 }
+
 .container #imgtxt{
     font-family: Fantasy;
     font-size: 40px;
-position: absolute;
+    position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%,-50%);
