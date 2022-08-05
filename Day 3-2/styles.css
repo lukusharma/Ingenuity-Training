@@ -36,6 +36,7 @@ header
         background-color: #05386B;
         border: 2px solid #bbb;
         position:fixed;
+        top 0;
         z-index: 2;
 
     }
@@ -212,7 +213,7 @@ header
     flex-wrap: nowrap;
     flex-direction: column;
     width: 45%;
-    background-color: navajowhite;
+    /* background-color: navajowhite; */
     overflow: hidden;
     justify-content: space-between  ;
     border-radius: 30px;
