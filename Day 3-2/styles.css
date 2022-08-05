@@ -20,7 +20,8 @@ header
     align-items: center;
     background-color:#1dd091;
     width: auto;
-    height: 20vh;
+    height: 15vh;
+    background-image: linear-gradient(to border-right,#1dd091,skyblue);
     /* border-radius: 30px; */
     /* margin-top: 5vh; */
 }
@@ -34,19 +35,24 @@ header
         width: 100%;
         height: 5vh;
         background-color: #05386B;
-        border: 2px solid #bbb;
-        position:fixed;
+        /* border: 2px solid #bbb; */
+        /* position:fixed; */
         top 0;
         z-index: 2;
+        /* background-image: linear-gradient(to right,  #05386b,skyblue); */
 
     }
     #u1 {
         list-style-type: none;
         margin: 0;
         padding: 0;
+        height: 5vh;
         overflow: hidden;
         background-color: #05386B;
-        border-radius: 10px;
+        /* border-radius: 10px; */
+        position: fixed;
+        z-index: 2;
+        border-bottom: 1px solid #bbb;
     }
     #l1 {
         float: left;
@@ -78,6 +84,8 @@ header
         /* width: auto; */
         height: 80vh;
         overflow: hidden;
+        background-image: linear-gradient(#8ee4af,rgb(135, 235, 197));
+        /* box-sizing: border-box; */
         /* border-radius: 30px; */
         /* display:flex ;
         justify-content: center; 
@@ -93,6 +101,8 @@ header
         position: relative;
         text-align: center;
         overflow: hidden;
+        box-shadow: 5px 0px 15px 5px #43e481; 
+        
     }
     .banner .b2
     {
@@ -101,7 +111,7 @@ header
         background-color: azure;
         margin-top: 1%;
         background-color: #a4e1ff;
-        border-radius: 30px;
+        /* border-radius: 30px; */
         display: flex;
     }
     .b2 #u2
@@ -120,8 +130,24 @@ header
         align-items: end;
         border-right: 1px solid #bbb;
         border-left: 1px solid #bbb;
-        height:15vh;
+        /* height:15vh; */
+    }
+    #l2 a
+    {
+        height: 15vh;
         align-items: center;
+        display: flex;
+        width: 100%;
+        font-size: 25px;
+        font-family: 'Josefin Sans', sans-serif;
+
+    }
+    #l2 a:hover
+    {
+        background-color: #05386B;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 35px;
+
     }
     
     .b1 #i1
@@ -146,10 +172,11 @@ header
     display:flex ;
     justify-content: center;
     align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 50px;
+    font-family: 'Square Peg', cursive;
+    font-size: 80px;
     color:rgb(243, 250, 255) ;
     padding: 4%;
+
 }
 
 
@@ -174,7 +201,7 @@ header
     width: 100%;
     height: 120%;
     overflow: hidden;
-    border-radius: 30px;
+    /* border-radius: 30px; */
     z-index: 1;
 }
 
