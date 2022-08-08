@@ -1,0 +1,102 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+.load
+    {
+        height: 20vh;
+        width: 100%;
+    
+        background-image:linear-gradient(to right, rgb(101, 196, 42), skyblue);
+        /* display: flex; */
+        /* justify-content: space-evenly; */
+        /* align-items:flex-start; */
+    }
+    .load .box5
+    {
+        background-image:linear-gradient(to right, rgb(101, 196, 42), skyblue);
+    }
+    .box5 #i1
+    {
+        height: 20vh;
+        animation: loader 1s linear infinite;
+        /* width: ; */
+    }
+    @keyframes loader
+    {
+        0%
+        {
+            opacity: 0;;
+        }
+        50%
+        {
+            opacity: 1;;
+        }
+        100%
+        {
+            opacity: 0;;
+        }
+    }
+    .box5 #i2
+    {
+        height: 20vh;
+        animation: slider 3s linear infinite;
+    }
+    @keyframes slider 
+    {
+        0%
+        {
+            transform: translateX(0px) rotate(0deg);;
+            /* transform: rotate(0deg); */
+        }
+        50%
+        {
+           transform: translate(1000px) rotate(360deg);;
+           /* transform: rotate(360deg); */
+        }
+        100%
+        {
+           transform: translate(0px) rotate(0deg);;
+           /* transform: rotate(0deg); */
+        }      
+    }
+
+.landing
+{
+    height: 80vh;
+    width: 100%;
+    background-image:linear-gradient(to right, rgb(101, 196, 42), skyblue);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+    .landing .box1, .box2, .box3, .box4
+    {
+        height: 70vh;
+        width: 20%;
+        background-image: linear-gradient(rgb(255, 125, 26), rgb(255, 236, 90));
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        transition: transform 1s;
+    }
+
+    .box1:hover
+    {
+        transform: translate(100px, 100px);
+        /* background-image: linear-gradient(rgb(255, 125, 26), rgb(0, 255, 94)); */
+        
+    }
+    .box2:hover
+    {
+        transform: scale(1.5)
+    }
+    .box3:hover
+    {
+        transform: rotate(90deg)
+    }
+    .box4:hover
+    {
+        transform: skew(10deg, -25deg)
+    }

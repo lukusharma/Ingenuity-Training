@@ -72,9 +72,66 @@
     transform:translateY / scale etc
 } -->
 
-<!-- background-image: linear-gradient(to bottom-right, pink,blue,yellow,gree,..);
+<!-- background-image: linear-gradient(to bottom-right, pink,blue,yellow,gree,..) or (blue 50%, red 50%) SP THAT Colors dont mix;
 cssgradient.io and generate gradient there -->
 <!-- text decoreation:none to remove lines in href
  -->
  <!-- give padding to a not li s that all is clickable -->
 <!-- use position sticky -->
+
+
+<!-- to apply transform:
+    in .box hover:
+        transform: translateX(300px);
+        in .box:
+        transition:transform 1s;
+
+        transform: rotation(90deg);
+        transform: rotation(90deg) translateX(100px) scale(2) skew(30deg, -45deg);
+     -->
+<!-- perspective
+    in .box:
+        perspective: 500px (closer the object, less the perspective)
+            in .contect:
+            transform: rotatre3d(50, 0, 0, 60deg); this changes the perspective in 3d space
+            transform: translate3d(50px, 50px, 20px);
+            transform: rotate3d(0,50,0,60deg) translateZ(50px);   
+    -->
+
+<!-- loaderAnimation
+    .container:
+    sqaure in center of the screen, make it circle
+    height: 100vh;
+    width:100%;
+    background-color;
+    in .box1:
+        height, width, border 10px solid and a light color, displayflex, justify, align;
+        flex-direction:column;
+        border-top: 10px solid white;
+        border-radius:50%;
+        animation: loader 2s linear infinite;
+    @keyframe loader{
+        0%{
+            transform: rotate(0deg);
+            }
+        100%{
+            transform: rotate(360deg)
+
+        }
+    }
+    in a box2: <p> loading
+        animation: popup 1s linear infinite;
+    
+     @keyframe: popup{
+        )%{
+            opacity:1;
+
+        }
+        50%{
+            opacity:0;
+
+        }
+        100%{
+            opacity:1;
+        }
+     } -->
