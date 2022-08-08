@@ -50,21 +50,26 @@
             transform: translateX(0px) rotate(0deg);;
             /* transform: rotate(0deg); */
         }
-        50%
+        33%
         {
-           transform: translate(1000px) rotate(360deg);;
+           transform: translate(500px) rotate(360deg);;
+           /* transform: rotate(360deg); */
+        }
+        66%
+        {
+           transform: translate(1000px) rotate(720deg);;
            /* transform: rotate(360deg); */
         }
         100%
         {
-           transform: translate(0px) rotate(0deg);;
+           transform: translate(0px) rotate(360deg);;
            /* transform: rotate(0deg); */
         }      
     }
 
 .landing
 {
-    height: 80vh;
+    height: 79.5vh;
     width: 100%;
     background-image:linear-gradient(to right, rgb(101, 196, 42), skyblue);
     display: flex;
