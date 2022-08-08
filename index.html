@@ -146,3 +146,91 @@ cssgradient.io and generate gradient there -->
         Day 3: How to create a complete webpage, use different formatting styles and hover.
         Day 4: Doubts.
         Day 5: Animations and Transformations using CSS.      -->
+
+<!-- in container make class for sky and in sky make hoghway, city, car and wheel
+    in sky:
+        width 100 height 100
+        back img url  
+        position relative
+        overflow hidden
+
+    in highway:
+        height 200px
+        width 300%
+        background image ulr
+        position absolute
+        bottom: 0
+        left: 0
+        right: 0
+        animation: highway 2s linear infinite;
+        z-index:2;
+
+    @keyframe highway
+    {
+        100%
+        {
+            transform: translateX(-1500px);
+        }
+    }
+    
+    .city
+    {
+        width: 300%;
+        height: 200px;
+        background-image:url
+        position:absolute
+        bottom:200px;
+        z-index: 1;
+        animation: city 5s linear infinite;
+    }
+    @keyframe city
+    {
+        100%
+        {
+            transform: translateX(-1500px);
+        }
+    }
+
+    .car
+    {
+        width:400px;
+        
+    }
+    .car img
+    {
+        width:100%;
+        position:absolute;
+        left:50%;
+        transform:translateX(-50px);
+        bottom:100px;
+        z-index:3;
+
+        in car in html
+        add 2 clss of wheel
+        hml: img class=front whee; and back weel
+    }
+    .wheel
+    {
+        position:absolute;
+        left:50%;
+        transform:translate(-50px)
+        bottom:150px;
+    }
+    .wheel img
+    {
+        width:70px;
+        height: 70px;
+        z-index:4;
+    }
+    .fron-wheel
+    {
+        position:absolute
+        left:80px;
+    }
+    .back-wheel
+    {
+        position:absolute
+        left:-165px;
+    }
+
+    -->

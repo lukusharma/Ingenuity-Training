@@ -12,6 +12,20 @@
         /* display: flex; */
         /* justify-content: space-evenly; */
         /* align-items:flex-start; */
+        animation: color 2s linear infinite;
+    }
+    @keyframes color {
+        0%
+        {
+            background-image:linear-gradient(to right, rgb(101, 196, 42), skyblue);
+
+        }
+        100%
+        {
+            background-image:linear-gradient(to right, rgb(101, 196, 42), rgb(0, 0, 0));
+
+        }
+        
     }
     .load .box5
     {
@@ -27,7 +41,7 @@
     {
         0%
         {
-            opacity: 0;;
+            opacity: 0;
         }
         50%
         {
