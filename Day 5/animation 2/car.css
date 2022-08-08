@@ -15,7 +15,7 @@
 }
 .highway{
     width: 300%;
-    height: 200px;
+    height: 26.5vh;
     position: absolute;
     /* this will be inside its parent */
     bottom: 0;
@@ -32,7 +32,7 @@
 }
 .city{
     width: 300%;
-    height: 185px;
+    height: 26vh;
     position: absolute;
     /* this will be inside its parent */
     bottom: 200px;
@@ -52,7 +52,8 @@
     position: absolute;
     width: 410px;
     height: 200px;
-    margin-top: 455px;
+    /* margin-top: 455px; */
+    bottom: 13vh;
     margin-left: 500px;
     z-index: 3;
     animation: bounce 1.5s linear infinite;
@@ -85,11 +86,9 @@
     
 }
 .img1{
-    
-    top: 560px;
+    bottom: 15vh;
     left: 532.5px;
 }
 .img2{
-    top: 560px;
-    left: 784px;
+bottom: 15vh;    left: 784px;
 }
