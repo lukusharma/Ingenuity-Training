@@ -41,7 +41,7 @@
     .box5 #i2
     {
         height: 20vh;
-        animation: slider 3s linear infinite;
+        animation: slider 3s ease infinite;
     }
     @keyframes slider 
     {
@@ -105,3 +105,9 @@
     {
         transform: skew(10deg, -25deg)
     }
+.p1
+{
+    font-weight: 10px; text-shadow: 5px 5px 10px; 
+    font-family: 'Square Peg', cursive;
+    color:#007567;
+}
