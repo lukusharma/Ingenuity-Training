@@ -32,10 +32,10 @@
 }
 .city{
     width: 300%;
-    height: 200px;
+    height: 185px;
     position: absolute;
     /* this will be inside its parent */
-    bottom: 201px;
+    bottom: 200px;
     background-image: url(./city.png);
     animation: city 8s linear infinite;
     left: 0;
@@ -55,6 +55,22 @@
     margin-top: 450px;
     margin-left: 500px;
     z-index: 3;
+    animation: bounce 1.5s linear infinite;
+}
+@keyframes bounce 
+{
+    0%
+    {
+        transform: translate(0,-5px);
+    }   
+    50%
+    {
+        transform: translate(0);
+    }   
+    100%
+    {
+        transform: translate(0,-5px);
+    }   
 }
 .imgg{
     position: absolute;
