@@ -35,7 +35,7 @@
     height: 26vh;
     position: absolute;
     /* this will be inside its parent */
-    bottom: 200px;
+    bottom: 26.5vh;
     background-image: url(./city.png);
     animation: city 8s linear infinite;
     left: 0;
