@@ -233,5 +233,74 @@ cssgradient.io and generate gradient there -->
         position:absolute
         left:-165px;
     }
+    -->
+
+<!-- JavaScript
+    create script tag inside body or head
+    in head,:
+        <script>
+            document.body.backgroundColor="pink"; // wont work because body is not created yet(top to down)
+        </script>    
+    in body:
+        <script>
+            document.body.backgroundColor="pink"; (this is called as a javascript command/instruction/statement)
+            (output statements):
+          1. document.write("Hello World"); // prints on the entire document
+          2. window.alert("Helo World"); // comes on the browser screen as a popup
+          3. console.log("Hello World"); // used to debug the code, use ctrl+shift+j to open the console
+          \\\\\\\\\\\\\\\\\\\\\\\
+        </script> 
+
+    use of variables:
+            keyword: var
+            var name = "Abhinav"; // semicolon is optional
+            var name; declaration
+            name = "Abhinav" // initialization
+
+            rules to create variables:
+                are case sensitive.
+                var name cannot start from a number, only letter or _
+                no space is between.
+                cannot use keyword as a var name.
+
+            Datatypes in JS:
+                use typeof to get the datatype
+                primitive:
+                    string(can use single quotes or double quotes), number, boolean,null(used so that datatype can be defined later), undefined(act as a datatype as well as a value, when datatype is not yet defined)
+                               
+                reference:
+            
+    Javascript works in two modes:
+        1. sloppy mode (eg. var keyword not used to define a variable, used for fast coding, this is by default.)
+        2. strict mode (creates more accurate code, takes more time.)  
+            'use scrict';
+            this is used on top of code so the whole code is strict type.
+
+    Types of Programming:
+            Static:
+                type of data is to be defined with the variable declaration.
+            Dynamic:
+                type of data need not be defined with the variable declaration.
+    
+    Dialog Boxes:
+        1. alert: used to display a message as a notification.
+            alert("notification")
+        2. conform: a dialog box which takes input as "yes" or "no".
+            var isOK = confirm("Are you sure?")
+            console.log(isOK)
+        3. prompt: used to take input from the user.
+            var name = prompt("enter name")
+            console.log(name)
+
+    Type Conversion:
+            const val1 = '5'
+            const val2 = 9
+        1. Implicit conversion:
+            sum = val1 + val2;
+            console.log(sum)
+                answer = 59
+        2. Explicit conversion:
+            sum = number(val1) + val2
+                answer = 14
 
     -->
