@@ -173,7 +173,7 @@ header
     justify-content: center;
     align-items: center;
     font-family: 'Square Peg', cursive;
-    font-size: 80px;
+    font-size: 100px;
     color:rgb(243, 250, 255) ;
     padding: 4%;
 
@@ -231,7 +231,7 @@ header
     height: 80%;
     overflow: hidden;
     z-index: 1;
-    border-radius: 30px;
+    /* border-radius: 30px; */
 }
 .aside
 {
@@ -243,7 +243,7 @@ header
     /* background-color: navajowhite; */
     overflow: hidden;
     justify-content: space-between  ;
-    border-radius: 30px;
+    /* border-radius: 30px; */
 }
 .aside  .as
 {
@@ -265,7 +265,7 @@ header
     align-items: center;
     font-size: 30px;
     font-family:cursive;
-    border-radius: 30px;
+    /* border-radius: 30px; */
 }
 .box #p3
 {
@@ -278,7 +278,7 @@ header
     align-items: center;
     font-size: 30px;
     font-family:cursive;
-    border-radius: 30px;
+    /* border-radius: 30px; */
     
 }
 .aside #i7
@@ -288,23 +288,24 @@ header
     height: 100%;
     overflow: hidden;
     z-index: 1;
-    border-radius: 30px;
+    /* border-radius: 30px; */
 }
 
 .boxcontainer
 {
 
     display:flex;
-    border-radius: 30px;
+    /* border-radius: 30px; */
     justify-content: space-around;
 }
 .boxcontainer .box
 {
-    background-color: rgb(0, 137, 191);
+    background-color: aquamarine;
     width: 40vh;
     height: 69vh;
     display: flex;
     border-radius: 30px;
+    font-weight: bold;
     
 }
 .box #i8
@@ -370,8 +371,8 @@ h3
 .f
 {
     background-color: red;
-    width: 100px;
-    height: 50px;
+    width: 80px;
+    height: 20px;
     border-radius: 25px;
-    margin-top: 30px;
+    margin-top: 44px;
 }
