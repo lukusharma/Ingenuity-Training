@@ -13,7 +13,7 @@
         person.firstName=prompt("Enter Name :");
         person.Age=prompt("Enter Age");
         person.Address=prompt("Enter Address :");
-        person.Hobbies=prompt("Enter Hobbies:");
+        person.Hobbies=prompt("Enter Hobbies :");
         document.write('<h1 style="text-align:center; color:orange;">'+person.pr()+'</h1>')
         document.body.style.fontSize="30px";
         document.body.style.textAlign="center";
