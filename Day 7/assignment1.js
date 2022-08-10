@@ -14,7 +14,8 @@ document.write("The Total Sum is: "+sum);
    document.body.style.fontSize="30px";
 document.body.style.textAlign="center";
 document.body.style.paddingTop="100px";
-document.body.style.color="white";
+document.body.style.color="black";
 document.body.style.fontStyle="cursive";
-document.body.style.backgroundColor="black";
+document.body.style.backgroundImage="linear-gradient(white, black)";
+document.body.style.backgroundSize=("100px 1000px");
 
