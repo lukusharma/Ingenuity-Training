@@ -425,5 +425,16 @@ cssgradient.io and generate gradient there -->
         console.log(fun(4,7));   
         
     function Expression:
-        var a = 10;
+        var a = function()    // anonymus function
+        {
+            console.log("function expression");
+            return "hello";
+        };  // ends in semicomma because all cuntion is stored in a variable
+        console.log(a());
+
+    (function()
+    {
+        console.log("this functions calls itself");
+
+    })(); // called as self invoking function
 -->
