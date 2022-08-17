@@ -458,8 +458,144 @@ cssgradient.io and generate gradient there -->
             console.log(a); // will be seen here
         }
         console.log(a); // will not be seen here (outside the function)
-        
-        2. Function Scope       
-
+    2. Function Scope       
     3. Global Scope
+-->
+
+<!-- Invoking Function as an Object
+    var obj = {
+        firstname : "Sachin",
+        lastname : "Yadav",
+        fullName : function(){ // using function to create a method of Object
+            return this.firstname + " " + this.lastname; // this is used for current object
+        },
+    };
+    console.log(obj.fullName());
+-->
+
+<!-- Function Call: 
+    var person1 = {
+        firstName:"sara",
+        lastname:"khan",
+    };
+    console.log(obj.fullName.call(person1)); // use call to reuse the method already available in another object
+
+    var person = {
+        fullName: function(city,country)
+        {
+            return this.firstname + " " + this.lastname + " " + city + " " + country;
+        }
+    }
+    person.fullName.call(person1,"mumbai","India"); // calling method of fullName and combining function of person 1 and person
+-->
+
+<!-- Function Apply
+    used to reuse the method of another object, difference from call is it takes input array
+    var person2 = {
+        firstName : "mohit"
+        lastName : "Kumar"
+    };
+    person.fullName.apply(person2,["Delhi","India"]); // array for input arguments of fullName
+-->
+
+
+<!-- Arrow Function
+    used to reduce the code is ES6 , known as Fat Arrow ,  can avoid return and paranthesis for single statement
+    var add = function(a,b){
+        return a+b;
+    };
+    console.log(add(5,10)); // this is an expression function 
+    
+    var add = (a,b) => a+b; // Arrow Function
+    console.log(add(5,15));
+
+    
+-->
+
+<!-- Ways to write arrow function
+    1.
+      var sayHello = ()=>colsole.log("variation-1");
+      sayHello();
+      var sayHello = () => {
+        console.log("var 2-1");
+        console.log("var 2-2");
+      };
+    2.
+      var srq = (a)=>console.log(a*a);
+      sqr(5);
+
+      var arr = [1,3,5,7];
+      arr.forEach( (a) => console.log(a * 10) ); // forEach() modiefies the array
+    3. 
+      var add = (a,b) => a+b;
+-->
+
+<!-- Map Function 
+    returns a new array
+    var arr1 = [1,3,5,7,10];
+    var arr2 = arr1.map((i) => i * 10)
+    console.log(arr2); // return a new array without modifying the first array
+
+    var users = [
+    (firstName:"Susan",lastName: "steward"),
+    (firstName:"Susan2",lastName: "steward2"),
+    (firstName:"Susan3",lastName: "steward3"),
+    ];
+    var fullName = users.map((u) => (
+        return u.firstName  + " "  + u.lastname;
+    ));
+    console.log(fullName);
+-->
+
+<!-- Filter Function
+    filters the argument 
+    var ages = [32,33,16,40];
+    var result = ages.filter(filterAge);
+    function filterAge(age)
+    {
+        return age > 18;
+    }
+    console.log(result);
+
+    let cities = [
+    (name:"la1",population:38780)
+    (name:"la2",population:45667)
+    (name:"la3",population:23445)
+    (name:"la4",population:32441)
+    ];
+    var bigCities = [];
+    ///////// using for loop//////////////
+    for(var i = 0; i < cities.length; i++)
+    {
+        if(cities.population > 30000)
+        {
+            bigCities.push(cities.[i]);
+        }
+    }
+    //////// using filter function//////
+    bigCities = cities.filter((city) => city.population > 30000);
+    //////// also sort ///////////
+    bigCities = cities.filter((city) => city.population > 30000).sort().reverse();
+    //////// for sorting strings /////////
+    bigCities = cities.filter((city) => city.population > 30000)
+    .sort(function(n1,n2))(
+        return n2.name - n1.name;
+    ));
+-->
+
+<!-- Scheduling Methods
+    /////// set Timeout Function/////////
+    setTimeout(callback,timer); // callback is for the function we want to call back, timer is after how much time
+    function callback(){
+        console.log("hello");
+    }
+
+    setTimeout(()=>(
+        console.log("hello");
+    ),5000);
+
+    /////// Set Time Interval /////////
+    calls a function after a set time infinitely.
+    var int1 = setInterval(callback,2000);
+    clearInterval(int1) // to stop the interval
 -->
