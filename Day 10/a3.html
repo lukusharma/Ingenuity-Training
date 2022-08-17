@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interval</title>
+    <style>
+        p 
+        {
+            text-align: center;
+            font-size: 50px;    
+            font-family: 'Josefin Sans', sans-serif;
+            color: whitesmoke;
+            /* font-weight: bold; */
+        text-shadow: 1px 1px 3px whitesmoke;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+</head>
+<body style="background-image: url(./b2.gif);
+            background-size: cover;">
+    <script>
+        alert("This will call a function in an interval of 3 sec for 5 times.")
+       
+        var flag  = 0;
+        function callback()
+        {
+            console.log("hello");
+            flag++;
+            if(flag == 5) clearInterval(int1);
+            document.write("<p>Hello!! " + 
+                "<br>" + "</p>") ;
+        }
+        var int1 = setInterval(callback,3000);
+        
+        
+    </script>
+</body>
+</html>

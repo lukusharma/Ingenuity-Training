@@ -572,10 +572,13 @@ cssgradient.io and generate gradient there -->
             bigCities.push(cities.[i]);
         }
     }
+ 
     //////// using filter function//////
     bigCities = cities.filter((city) => city.population > 30000);
+ 
     //////// also sort ///////////
     bigCities = cities.filter((city) => city.population > 30000).sort().reverse();
+   
     //////// for sorting strings /////////
     bigCities = cities.filter((city) => city.population > 30000)
     .sort(function(n1,n2))(

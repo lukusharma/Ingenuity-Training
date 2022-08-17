@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call and Apply</title>
+</head>
+<body>
+    <script>
+        fullName : function fullName()
+        {
+            return this.firstname + " " + this.lastname;
+        };
+        alert("This will display your name using Funcion Call")
+        var person1 = 
+        {
+            firstname:prompt("Enter first Name"),
+            lastname:prompt("Enter Last Name"),
+        };
+        console.log(fullName.call(person1));
+        // return fullName.call(person1);
+
+
+        alert("Now will use Function Apply")
+        var city2 = 
+        {
+            city3:prompt("Enter City Name"),
+            city4:prompt("Enter Country Name"),
+        };
+        var person = 
+        {
+        fullName: function(city,country)
+            {
+                return this.firstname + " " + this.lastname + " " + city2.city3 + " " + city2.city4;
+            }
+        }
+    fullName.apply(person);
+    console.log(person.fullName.apply(person1,["Delhi","India"]));
+    // return person.fullName.apply(person1,["Delhi","India"]);
+
+    document.body.innerHTML="<h1 style = color:black>Full Name using Call Function: " + fullName.call(person1) + "<br>"  + " Description using Apply Function: " + person.fullName.apply(person1,["Delhi","India"])  +   "</h1>" ;
+
+
+
+    document.body.style.fontSize="30px";
+    document.body.style.textAlign="center";
+    document.body.style.paddingTop="100px";
+    document.body.style.color="black";
+    document.body.style.fontStyle="cursive";
+    document.body.style.backgroundImage="linear-gradient(white, black)";
+    document.body.style.backgroundSize=("100px 1000px");
+
+
+    </script>
+    
+</body>
+</html>

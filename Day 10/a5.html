@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+    <style>
+        p 
+        {
+            text-align: center;
+            font-size: 50px;
+            font-family: 'Josefin Sans', sans-serif;
+            color: whitesmoke;
+            /* font-weight: bold; */
+        text-shadow: 1px 1px 3px whitesmoke;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+</head>
+<body style="background-image: url(./b3.gif);
+            background-size: cover;">
+    <script>
+        alert("This will filter ages above 25.");
+        
+        var people = 
+        [
+            { name: "Ashish", age: 23 },
+            { name: "Ajay", age: 21 },
+            { name: "Arvind", age: 26 },
+            { name: "Mahesh", age: 28 },
+            { name: "Jay", age: 19 }
+        ];
+        
+            document.write("<p>Names Before Filtering are:" + "<br>" +  "Ashish 23, Ajay 21, Arvind 26, Mahesh 28, Jay 19" + "<br>" + "</p>");
+            document.write("<p>Names After Filtering are:" + "<br>" + "<br>" + "</p>");
+        
+        var filtered = people.filter((people) => people.age < 25).sort();
+        console.log(filtered);
+        var fullName = filtered.map((u) => 
+        (
+            document.write("<p>" + u.name  
+            + " " 
+            + u.age
+            + "<br>"
+            + "</p>")
+        ));
+    </script>
+</body>
+</html>

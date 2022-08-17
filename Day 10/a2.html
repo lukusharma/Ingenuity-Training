@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cube Root</title>
+</head>
+<body>
+    <script>
+        alert("This will find the Cube Root of a Number.")
+        var a = [8,27,64,125,216];
+        var a2 = a.map((i) => Math.cbrt(i));
+        // for ( var i = 0; i < a.length;i++) 
+        // {
+        //     a[i] = Math.cbrt(a[i]);
+        // }
+        // document.write(a2);
+        document.body.innerHTML="<h1 style = color:black>The given Array is: [8,27,64,125,216]" + 
+            "<br>"  
+            + "Cube root of this Array is: "
+            + a2  + "</h1>" ;
+            document.body.style.fontSize="30px";
+    document.body.style.textAlign="center";
+    document.body.style.paddingTop="100px";
+    document.body.style.color="black";
+    // document.body.style.fontStyle="cursive";
+    document.body.style.backgroundImage="linear-gradient(white, black)";
+    document.body.style.backgroundSize=("100px 1000px");
+
+    </script>
+</body>
+</html>

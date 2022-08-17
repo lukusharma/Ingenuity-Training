@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Function</title>
+    <style>
+        p
+        {
+            text-align: center;
+            font-size: 50px;
+            font-family: 'Josefin Sans', sans-serif;
+            color: rgb(255, 196, 0);
+            /* font-weight: bold; */
+        text-shadow: 2px 2px 3px rgb(255, 196, 0);
+        }
+    </style>
+</head>
+<body style="background-image: url(./b1.gif);
+background-size: cover;">
+    <script>
+        alert("This will iterate an Array of Objects using map function.")
+        var people = 
+        [
+            { name: "Ashish", age: 23 },
+            { name: "Ajay", age: 21 },
+            { name: "Arvind", age: 26 },
+            { name: "Mahesh", age: 28 },
+            { name: "Jay", age: 19 }
+        ];
+        
+        var fullName = people.map((u) => 
+        (
+            document.write("<p>"  + u.name 
+            + " " 
+            + u.age
+            + "<br>"  + "</p>")
+        ));
+    </script>
+    
+</body>
+</html>
