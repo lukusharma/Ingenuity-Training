@@ -1,0 +1,79 @@
+<!-- Document Object Model
+so that javascript can be performed on html as there is no direct connection b/w them 
+-->
+<!-- used to access different parts of the document:
+    document.title
+    document.head
+    documen.body 
+
+    document.title = "New Title";
+-->
+
+<!-- var x = document.getEementById('name_of_id'); // used to access any usique id of HTML in JS
+    document.getEementByClassName('name_of_class'); // used to access multiple tags at the same time
+    document.getEementByTagName('ul'); // used to acces any dom element such as p, h1, etc.
+
+    document.querySelector("#name_of_id" / ".name_of_class"); // acts as a query, finds first tag that matches the name.
+    document.querySelectorAll(".name_of_class"); // access all elements in the class
+ -->
+
+ <!-- Document manipulation
+    name_of_variable.style.backgroundColor = "yellow";
+    
+    x.innerText = "New Heading"; // changes the inner text of the element
+    
+    x.style.display = "none"; // that element won't be displayed and is not there anymore and next element will take its position
+    x.style.visibility = "none"; // that element won't be displayed but is there and next element will not take its position
+    
+    x[1].style // if x is class with multiple elements, it will act as an array and this will point to the 1 index of the array
+    eg. x[1].style.backgroundColor = "brown";
+
+    var newli = document.createElement('li'); // to create a new element of 'li'
+    newli.textContect = "new item"; // to enter content in the element
+    id_of_ul.appendChild(newli);
+-->
+
+<!-- apply on multiple elements at once
+    for(var i = 0; i < y.length; i ++)
+    {
+        y[i].style.color = "blue" // y is pointing to more than one paragraphs
+    }
+    -->
+
+<!-- creating a button
+    button tage
+-->
+
+
+<!--Event handling:
+        1. Inline 
+            <button onClick = "alert('button is clicked')"> Click Here </button>
+            <button onClick = "performTask()"> Click Here </button> // in HTMl
+                function performTask() // in script
+                {
+                    alert("Button is clicked");
+                    console.log("button clicked");
+                }
+
+        2. Handling using reference
+                is script:
+                    var btn = document.querySelector('button');
+                    
+                    btn.onmouseover = performTask;
+                    or btn.onmouseover = function()
+                    {
+                        document.querySelector("p".style.backgroundColor = "yellow");
+                    };
+                    btn.onmouseleave = () => document.querySelector("p".style.backgroundColor = "pink");
+
+        3. Using AddEventListener
+            btn.addEventListener(nameOfEvent,FunctionToPerform)
+            btn.addEventListener("click",task1); // to bind the event listener
+            btn.removeEventListener("click",task1); // to remove the binding of eventlistener
+            function task1()
+            {
+                document.getElementById("name_of_id").style.display="none";
+            }
+
+
+-->
