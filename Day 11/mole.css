@@ -1,12 +1,15 @@
 *
 {
     margin: 0%; padding: 0%;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 body {
-    background-image: url("./images/background2.jpg");
+    background-image: url("./images/g2.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: inherit;
+    /* cursor: u auto; */
   }
   
   h1 {
@@ -20,14 +23,16 @@ body {
   
   #mole {
     position: absolute;
-    left: 39%;
-    top: 26%;
+    left: 40%;
+    top: 33%;
+    width: 300px;
+    cursor: crosshair;
   }
   #mud {
     position: fixed;
-    left: 30%;
+    left: 34%;
     width: 500px;
-    top: 44%;
+    top: 53%;
     /* visibility: hidden; */
   }
   #start {
@@ -43,20 +48,22 @@ body {
     top: 85%;
     left: 43%;
     cursor: pointer;
+    cursor: url('./images/hamm.png'), auto;
+    /* cursor: wait; */
   }
   
   .dirt {
-    width: 170px;
+    width: 230px;
     position: absolute;
     z-index: 1;
     visibility: hidden;
   }
   #dirt1 {
-    top: 72%;
-    left: 20%;
+    top: 62%;
+    left: 7%;
   }
   #dirt2 {
-    top: 90%;
+    top: 92%;
     left: 20%;
   }
   #dirt3 {
@@ -64,52 +71,62 @@ body {
     left: 45%;
   }
   #dirt4 {
-    top: 90%;
+    top: 92%;
     left: 45%;
   }
   #dirt5 {
-    top: 72%;
-    left: 65%;
+    top: 77%;
+    left: 83%;
   }
   #dirt6 {
-    top: 90%;
-    left: 65%;
+    top: 92.5%;
+    left: 69%;
   }
   .points {
     font-size: x-large;
     font-weight: bolder;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-left: 20px;
+    font-family: 'Rubik Dirt', cursive;
+    /* padding-left: 2000px; */
     visibility: hidden;
-  }
+    font-size: 50px;
+    color: aquamarine;
+    }
+.point2
+{
+
+    margin-left: 36.5%;
+    margin-top:10%;
+}
+ 
   .mole {
     position: absolute;
-    height: 80px;
-    width: 70px;
+    height: 100px;
+    width: 100px;
     visibility: hidden;
+    cursor: crosshair;
   }
   #mole1 {
-    top: 66%;
-    left: 23%;
+    top: 57%;
+    left: 11%;
   }
   #mole3 {
     top: 66%;
     left: 48%;
   }
   #mole5 {
-    top: 66%;
-    left: 68%;
+    top: 72%;
+    left: 87%;
   }
   #mole2 {
-    top: 84%;
-    left: 23%;
+    top: 86%;
+    left: 24%;
   }
   #mole4 {
-    top: 84%;
-    left: 48%;
+    top: 86%;
+    left: 49%;
   }
   
   #mole6 {
-    top: 84%;
-    left: 68%;
+    top: 87%;
+    left: 73%;
   }

@@ -20,15 +20,17 @@ function start()
     mainmnud.style.visibility = "hidden";
     startbtn.style.visibility = "hidden";
     
-    for(var i = 0; i < 6; i++)
+    for(var i = 0; i < 5; i++)
     {
         mud[i].style.visibility="visible";
+        // mole[i].style.visibility="visible";
+        
     }
     for(var i = 0; i < 2; i++)
     {
         point[i].style.visibility="visible";
     }
-    setInterval(rand,2000);
+    setInterval(rand,1600);
 
 };  
 
@@ -36,20 +38,21 @@ function counter()
 {
     count++;
     point[1].textContent = count;
+    
 }
 
 function rand()
 {
     
-    var random = Math.floor(Math.random()*6)+1;
+    var random = Math.floor(Math.random()*6);
     var y = random;
     mole[y].style.visibility="visible";
     mole[y].onclick=counter;
-   
+    
     function hide()
     {
         mole[y].style.visibility="hidden";
     }
-    setTimeout(hide,1000);
+    setTimeout(hide,1500);
 
 }
