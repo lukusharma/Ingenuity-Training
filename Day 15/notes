@@ -1,0 +1,109 @@
+JavaScript is synchronus but can be made to asynchronus if we need.
+
+the "script" in JS means functions, means it is based on functions.
+
+in JS, functions are first class citizens, it means:
+    1. functions can be used as an argument.
+    2. functions can be assigned to a variable.
+    3. funcrions can also be used as return statement.
+
+
+setTimeout() is an asynch statement
+    for eg if a loop is too log, use setTimeout such that all stetement after the statement is executed and loop returns value when it is completed.
+
+callback: used when 2 functions should depend on each other
+    1. means function can be used as an argument.
+    2. it is a function that is executed after another funcion has finished executing (function inside another function).
+    nested callbacks are called as callback(callback inside callback inside callback....)
+    var stuednts = 
+        [
+            {name:"Sachin", subject:"Java"},
+            {name:"Manish", subject:"Python"},
+            {name:"Rupali", subject:"c++"},
+        ];
+
+    /////////// using setTimeout(), it will not give accruate result////////
+
+    function admitStudent(student)
+        {
+            setTimeout(() => {
+                stuednts.push(student);
+                console.log("Admitted");
+            }, 3000);
+        }
+
+    function displayStudent()
+        {
+            setTimeout(()=> 
+            {
+                var str = "";
+                stuednts.forEach((student) =>
+                    {
+                        str += student.name + " ";
+                    });
+                console.log("Fetched");
+            },1000);
+        }
+
+    var newStudent = {name:"Rahul", subject:"react"};
+    admitStudent(newStudent);
+    
+    ///////////using callback//////////////////
+    function admitStudent(student, callback)
+        {
+            setTimeout(() => {
+                stuednts.push(student);
+                console.log("Admitted");
+                callback();
+            }, 3000);
+        }
+
+    function displayStudent()
+        {
+            setTimeout(()=> 
+            {
+                var str = "";
+                stuednts.forEach((student) =>
+                    {
+                        str += student.name + " ";
+                    });
+                console.log("Fetched");
+            },1000);
+        }
+
+    var newStudent = {name:"Rahul", subject:"react"};
+    admitStudent(newStudent);
+
+
+
+Promise: to communicate with APIs
+    is used when data is called to/from the Server
+    it is a future value, will not be returned immediately, can take Time
+    pending, fulfilled, rejected are 3 states of promise.
+
+    function sayHi()
+    {
+        return new Promise((resolve, reject) =>
+        {
+            console.log("checking...."); // msg displatyed while req is pending
+            setTimeout(() => // for pending
+            {
+                const err = false;
+                if(!err) // API is called here
+                {
+                    resolve("completed");
+                }
+                else
+                {
+                    reject("cannot be complated");
+                }
+            }, 3000);
+        });
+    }
+
+    console.log(sayHi());
+    
+    //////// consume a promise//////////////
+    sayHi().then((val) => console.log(val)) // value when promise is fullfilled
+    .catch((err) => console.log(val)); // value when promise is rejected
+
