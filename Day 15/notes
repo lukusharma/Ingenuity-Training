@@ -107,3 +107,110 @@ Promise: to communicate with APIs
     sayHi().then((val) => console.log(val)) // value when promise is fullfilled
     .catch((err) => console.log(val)); // value when promise is rejected
 
+API: k/a end point of the server, gives a point from where to fetch data
+API call:
+    ways:
+        1. XHR
+            // const API_URL = "ulr_of_the_api_from_where_to_get_data";
+            const API_URL = "https://jsonplaceholder.typicode.com/users";
+
+            function getData(ulr)
+            {
+                console.log("XHR");
+                return new Promise((resolve, reject) =>
+                {
+                    // create an instance of XHR
+                    var request = new XMLHttpRequest(); // it is a class to connect with the API
+                    request.open("GET", url); // wheather to get or send data, to/from where
+                    request.send(); // this is a method to send req to API
+                    request.onload = () =>
+                    {
+                        console.log(request); // this will display the response from the API
+                        console.log(request.response); // this will display the data from the API
+
+                        if(request.status === 200) // 200 means all is good
+                        {
+                            resolve(request.response);
+                        }
+                        else
+                        {
+                            reject("not able to fetch data");
+                        }
+                    };
+                });
+            }
+            getData(API_URL)
+            .then((val) => 
+            {
+                console.log(JSON.parse(val));
+                displayData(JSON.parse(val));
+            }) // json.parse is used to convert the default string input from api to array.
+            .catch((err) => console.log("Error" + err));
+
+            function displayData(serverData)
+            {
+                for(var user of serverData) // user of means will point to user of each iteration
+                {
+                    let newtr = document.createElement('tr');
+                    
+                    let newtd1 = document.createElement('td');
+                    let newtd2 = document.createElement('td');
+                    let newtd3 = document.createElement('td');
+                    let newtd4 = document.createElement('td');
+
+                    newtd1.innerText = "" + user.id;
+                    newtd2.innerText = "" + user.name;
+                    newtd3.innerText = "" + user.email;
+                    newtd4.innerText = "" + user.phone;
+
+                    newtr.appendChile(newtd1);
+                    newtr.appendChile(newtd2);
+                    newtr.appendChile(newtd3);
+                    newtr.appendChile(newtd4);
+
+                    document.getElementById("myTable").appendChild(newtr);
+                }
+            }
+
+            in HTML:
+                <table id="mytable">
+                    <tr>
+                        <th>S.No.</th>
+                        <th>Name.</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                    </tr>
+                    </table>
+        2. fetch
+        function getData(ulr)
+            {
+                console.log("fetch");
+                var r = fetch(ulr);
+                console.log(r);
+
+                fetch(ulr)
+                .then((val) => 
+                {
+                    return val.json();
+                })
+            .then((res) => displayData(res))
+            .catch((err) => console.log(err));
+            }
+            getData(API_URL);
+
+        3. Async and await
+            //////////// to remove then-catch//////////////
+            async function getData(ulr)
+            {
+                console.log("Async and awaiy");
+                
+                var data = await fetch(url);
+                var result = await data.json();
+                console.log(data);
+                displayData(data);
+            
+            }
+            getData(API_URL);
+            // https://api.covid19api.com/summary
+
+        3. Third Party packages (c/a Axios)
