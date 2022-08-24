@@ -1,0 +1,127 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#container
+{
+    background-image: url(./b1.jfif);
+    background-size: cover;
+    background-color: aqua;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+h1{
+    /* margin-top: 1%; */
+    color: rgb(11, 10, 11);
+    /* font-style: italic; */
+    font-size: 60px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.info
+{
+    background-color: #fff;
+    background-color: rgba(49, 53, 53, 0.5);
+    height: 80%;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+}
+form
+{
+    height: 450px;
+    width: 750px;
+    padding: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(181, 250, 32);
+}
+form .divs
+{
+    width: 300px; 
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    color: yellow;
+    font-size: 100%;
+}
+.gender
+{
+    width: 165px;
+    display: flex;
+    justify-content: space-between;
+    /* margin-left: -300px; */
+}
+#radio1
+{
+    left: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.radio
+{    
+    width: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.sports
+{
+    width:250px;
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+.game
+{
+    display: flex;
+    justify-content: space-between;
+    /* margin-left: -164px; */
+}
+.sports1
+{
+    margin-left: 34%;
+}
+#sub
+{
+    display: flex;
+    justify-content: center;
+}
+
+#b1
+{
+    background-color: aquamarine,1;
+    border: 1%;
+    color: blue;
+    border-radius: 15%;
+    width: 20%;
+    height: 100%;
+    font-size: 90%;
+    
+}
+#b1:hover
+{
+    background-color: aliceblue;
+    cursor: pointer;
+    font-weight: bold;
+    /* box-sizing: border-box; */
+}
