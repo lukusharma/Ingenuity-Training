@@ -7,8 +7,8 @@
 
 form
 {
-    height: 80vh;
-    width: 80%;
+    height: 90vh;
+    width: 90%;
     background-color: rgb(179, 255, 0);
     display: flex;
     justify-content: space-evenly;
@@ -21,12 +21,12 @@ form
     width: 400px; 
     display: flex;
     align-items: start;
-    /* justify-content: space-between; */
-    font-size: 100%;
+    font-size: 200%;
 }
 .h2
 {
-    margin-left: 50px;
+    /* font-size: 30px; */
+    margin-left: 5px;
 }
 #da
 {
