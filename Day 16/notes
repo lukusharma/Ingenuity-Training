@@ -1,0 +1,154 @@
+Audio Tag
+    <audio controls loop autoplay muted hidden> //controls for audio controls, hidden to hide the player
+        <source src = "" type = "audio/mp3"> // for multiple sources
+        <source src = ""> // it will go to this source when the 1st source is not available
+        
+Video Tag
+    <video controls loop autoplay muted hidden>
+        <source src = "" type = "audio/mp4">
+
+<button id = "b1">play
+    <script>
+        //selector
+        var audio = document.getElementById('audio');
+        var btn = document.getElementById(btn1);
+
+        btn.onclick = perfornAudioTask;
+        function performAudioTask()
+        {
+            audio.play (); // plays the audio
+            audio.sec = ""; // changes the source of the audio
+            audio2.load(); // loads another audio into the player
+            audio2.muted = true; // to mute the audio
+            if(audio.muted == true)
+            {
+                audio.muted = false;    
+            }
+        }
+        var newaudio = new Audio(); // to create a new audio object
+        newaudio.src = " ";
+    </script>
+
+iFrame: // inline frame
+    <iframe 
+    ////////////// for a website /////////////
+        src="betalabs.com" 
+        frameborder="0"
+        width="400px"
+        height="400px">
+    </iframe>
+    
+    ///////// for youtube video....share>embedd>paste in the frame //////////
+        
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/t2sXtdrOCnI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+    ///////// for maps.....share>embedd>paste /////////// 
+        
+Canvas:
+    <Canvas id = "canvas"
+    height="500"
+    width="500">
+    <style>
+        body
+        {
+            min-height: 100vh;
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #canvas
+        {
+            background-color: aqua;
+            border-radius: 20px;
+
+        }
+    </style>
+
+    </Canvas>
+
+    in js:
+    <script>
+        var canvas = document.getElementById("canvas");
+        const ctx = canvas.getContext("2d"); // to draw 2d objects
+        canvas.width = window.innerWidth; // to auto adjust the width acc to screen size
+
+        ////// filled rectangle
+        ctx.fillStyle = "red"; // to set color of ctx
+        ctx.fillRect(50,50,150,100); //draw rectangle at distance 50 from origin x, dist 50 from org y, width, height 
+
+        /////// stroke rect
+        ctx.linewidth = 6;
+        ctx.strokeStyle = "blue";
+        ctx.strokeReact(250,50,150,100); // rectangle made of border only        
+
+        ////// rounded rect
+        ctx.fillStyle = "orange";
+        ctx.roundRect(450,50,100,100,[10]); // last is the radius
+        ctx.fill(); // rounded rectangle
+        
+        ///////// eraser
+        ctx.clearRect(40,40,140,90); // eraser tool
+        ctx.clearRect(0,0,canvas.width,canvas.height); // erase all canvas
+
+        ///////// text
+        ctx.font = "30px Arial";
+        ctx.fillStyle="green";
+        ctx.fillText("Hello",200,200); // text, position from origin x, y
+
+        /////// text with border only
+        ctx.linewidth = 1;
+        ctx.strokeStyle = "lime";
+        ctx.strokeText("hello",200,300)
+
+        ////// Draw shapes freely
+        ctx.beginPath();
+        ctx.moveTo(50,50); 
+        ctx.lineTo(150,50); // x,y
+        ctx.lineTo(100,200);
+        ctx.lineTo(50,50);
+        ctx.closePath(); // will automatically close path
+        ctx.fillStyle="coral";
+        ctx.fill(); // will fill the shape
+        ctx.stroke(); // this will draw the line
+
+        //////// draw arc/ circle
+        ctx.beginPath();
+        ctx.arc(300,300,100,0, Math.PI * 2); // x,y,radius,st angle, end angle  , math.pi b/c default in radian
+        ctx.stroke();
+
+    //// Animation on canvas
+        var circle = 
+        {
+            x:200,
+            y:200,
+            size:30,
+            dx:5, // displacement in x
+            dy:5,
+
+        };
+
+        function drawCircle()
+        {
+            ctx.beginPath();
+            crx.arc(circle.x, circle.y ,circle.size ,0 ,Math.PI * 2);
+            ctx.fillStyle = "purple";
+            ctx.fill();
+        }
+
+        function update()
+        {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            drawCircle();
+            circle.x += circle.dx;
+            circle.y += circle.dy;
+
+            ///// detect wall
+            if(circle.x + circle.size > canvas.width || circle.x - circle.size < 0) circle.dx *= -1;
+            if(circle.y + circle.size > canvas.height || circle.y - circle.size < 0) circle.dy *= -1;
+
+            requestAnimationFrame(update);
+        }
+
+        update();
+    </script>
