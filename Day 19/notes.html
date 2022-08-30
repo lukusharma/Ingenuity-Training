@@ -1,0 +1,128 @@
+Es5 Variables:
+    var a = 10; // global scope as well as local scope.
+    {
+        b = 20;
+    }
+    console.log(b); // variable accessed outside the block.
+
+ES6 Variables: having Block scope
+    {
+        const d = 100; // local scope variable, value can't be updated
+        let c = 100; // let makes a local scope variable, it's value cann be updated.
+        console.log(c); // will be accessed
+    }
+    console.log(c); // undefined, will not be accessed
+
+    const add = (x,y) => x + y;
+    console.log(add(5,10));
+
+    // creating function in return will not work
+    let x = 10;
+    let result = add(15, (multi = (x) => x * x));  // this will not work
+
+
+// Destructuring
+    var arr = [1,2,3,4,5,7,8,9,10];
+    var x = [0];
+    var y = [1];
+    var z = [2];
+    var z1 = [3];
+    var z2 = [4];
+
+    var [a,b,c,d,e,f,,,,t] = arr; // this is destructuring; ,,,,t is used to aceess the data at that position, "," determines the position of the data in the array
+
+    // Destructuring with Object
+        let person = {
+            name: "sachin",
+            age:30,
+            mobile: 123123
+            email:"aa",
+            city:"delhi",
+        };
+        console.log(person.name);
+        console.log(person.age);
+        // by destructuring:
+            let {mobile,email,city} = person;
+            console.log(mobile);
+            console.log(email);
+            console.log(city);
+
+// Restructuring
+        let name = "asdf";
+        let designation = "asdfadf";
+        let city = "delhi";
+        let distance = 135;
+
+        let obj = {name, designation, city, distance};
+
+
+// Rest Operator: for large data inputs in function
+        used for packing the data
+        function display(...data)
+        {
+            console.log(data); // all data will be displayed as an array
+        }
+        display(1,2,3,4,5,6,7,8,9);
+        
+        function display(x, y, ...data)
+        {
+            console.log(data); // x and y will not be displayed here because they are stored seperately
+        }
+        display(1,2,3,4,5,6,7,8,9);
+
+    
+//Spread Operator: used for unpacking the data
+        let arr1 = [2,4,6,8];
+        let arr2 = [1,3,5,7, ...arr1];
+
+
+// Template String:
+        let fname = "abhinav";
+        let lname = "sharma";
+        console.log("welcome" + " " + fname + " " + lname);
+
+        // using template string:
+            console.log(`welcome ${fname} ${lname}`); // use back-ticks and ${}.
+
+
+
+Class:
+    class Training{
+        //Skeleton of the class
+        constructor(trainingName, trainingDuration, trainingStatus) // formal arguments
+        {
+            this.trainingName = trainingName;
+            this.trainingDuration = trainingDuration;
+            this.trainingStatus = trainingStatus;
+        }
+        //Member Function
+        displayDetails(){
+            retrun `Training Name : ${this.trainingName}\nTraining Duration: ${this.trainingDuration}\nTraining Status: ${this.trainingStatus}`;
+        }
+    }
+    //Object Creation
+    let IngenuityGaming = new Training("Development Basics", 120, "Offline");
+    let Dell = new Training("ReactJS", 40, "Online");
+
+    //Method Calling
+    IngenuityGaming.displayDetails();
+    Dell.displayDetails();
+
+//// Inheritance in class
+    class InCampus extends Training
+    {
+        constructor(a,b,c,d)
+        {
+            super(a,b,c); // use method of parent class
+            this.rollno = d;
+        }
+        displayDetails() // method overriding
+        {
+            super.displayDetils(); // calls method of parent class
+            console.log("child class");
+        }
+    }
+
+let stu1 = new InCampus("Flutter", 40, "Online", 1011);
+stu1.displayDetails();
+
