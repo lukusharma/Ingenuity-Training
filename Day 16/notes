@@ -131,7 +131,7 @@ Canvas:
         function drawCircle()
         {
             ctx.beginPath();
-            crx.arc(circle.x, circle.y ,circle.size ,0 ,Math.PI * 2);
+            ctx.arc(circle.x, circle.y ,circle.size ,0 ,Math.PI * 2);
             ctx.fillStyle = "purple";
             ctx.fill();
         }

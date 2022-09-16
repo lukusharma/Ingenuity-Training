@@ -9,7 +9,7 @@ in JS, functions are first class citizens, it means:
 
 
 setTimeout() is an asynch statement
-    for eg if a loop is too log, use setTimeout such that all stetement after the statement is executed and loop returns value when it is completed.
+    for eg if a loop is too long, use setTimeout such that all stetement after the statement is executed and loop returns value when it is completed.
 
 callback: used when 2 functions should depend on each other
     1. means function can be used as an argument.
